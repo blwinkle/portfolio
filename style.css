@@ -151,8 +151,10 @@ h5{
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
-.touch #port .lbTrigger:focus,.touch #port .lbTrigger:active,,.touch #port .lbTrigger:hover{border: 10px solid white;}
--webkit-tap-highlight-color: #fff;
+.touch #port .lbTrigger:focus,.touch #port .lbTrigger:active,,.touch #port .lbTrigger:hover{border: 10px solid white;
+    -webkit-tap-highlight-color: #fff;
+}
+
 .no-touch #port .lbTrigger:focus{border: 10px solid transparent;}
 .no-touch #port .lbTrigger:hover{border: 10px solid #fff;}
 .lbOverlay
