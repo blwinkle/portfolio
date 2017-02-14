@@ -45,6 +45,12 @@ var viewport = function(){
     $('#res').click(function(){
         $('p', this).slideToggle('slow');
     });
+	  
+	      jQuery(function($){
+ // Touch Device Detection 
+		      var isTouchDevice = 'ontouchstart' in document.documentElement; 
+		      if( isTouchDevice ) {  $('body').removeClass('no-touch'); }
+    });
       
   });
 
