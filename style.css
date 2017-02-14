@@ -150,7 +150,7 @@ h5{
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
-.lbTrigger:focus{border: 10px solid white;}
+.lbTrigger:focus,.lbTrigger:hover{border: 10px solid white;}
 .lbOverlay
   {
     height: 100%;
