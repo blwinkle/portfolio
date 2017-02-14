@@ -151,6 +151,7 @@ h5{
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
+.touch lbTrigger:hover{border: 10px solid white}
 .touch #port .lbTrigger:focus,.touch #port .lbTrigger:active,,.touch #port .lbTrigger:hover{border: 10px solid white;
     -webkit-tap-highlight-color: #fff;
 }
