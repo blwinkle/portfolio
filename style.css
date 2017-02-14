@@ -49,19 +49,20 @@ p{line-height:140%;font-weight:500;}
     background-position: 5% 50%;*/
     }
 .centerO{background-color:#000;color:#fff;}
-.center p{float:right;}
+.center p a{float:right;}
 .center a:hover{cursor: url("portimages/cursorLinkedIn.png"), url("portimages/cursorLinkedIn.cur"), default;}
     #nav .center h1,#nav .center h5{
 /*        padding-left:60px;*/
     }
 h1,h5{
-    margin:0px;
+    margin:0px 0px 0px 0px;
     padding:0 0;
     line-height:100%;
     font-weight:normal;
 }
 h1{
-    padding:10px 0 0 0;
+    padding:0px 0 0 0;
+/*    margin-top:15px;*/
 }
 h5{
     padding:0 0 10px 0;
@@ -150,7 +151,8 @@ h5{
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
-.touch #port .lbTrigger:focus{border: 10px solid white;}
+
+.touch #port .lbTrigger:focus,.touch #port .lbTrigger:active{border: 10px solid white;}
 .no-touch #port .lbTrigger:focus{border: 10px solid transparent;}
 .no-touch #port .lbTrigger:hover{border: 10px solid #fff;}
 .lbOverlay
