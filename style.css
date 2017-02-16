@@ -1,5 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
+.checksize {width:2px;}
 html,body{
     margin:0;
     padding:0;
@@ -50,6 +51,9 @@ p{line-height:140%;font-weight:500;}
     width:90%;
     padding:.5% 5% .5% 5%;
     text-align:right;
+    font-family: 'Dancing Script', cursive;
+    font-size:1.2em;
+    font-weight:700;
     }
 #nav .center{
    /* background:url('portimages/logoEB.png') no-repeat;
@@ -122,9 +126,18 @@ h5{
     content: "";
 }*/
 #res .col2{
-    width:90%;
-    margin:0 5%;
+    width:100%;
+/*    margin:0 5%;*/
+    margin:0 0;
+    text-align:center;
+    
 }
+    #res .col2 img{
+/*        height:620px;*/
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
+
 #res .col2 p{
 /*    font-weight: 700;*/
     color:#000;
@@ -230,7 +243,7 @@ h5{
     }
 /* Medium devices (desktops, 768px and up) */
 @media only screen and (min-width: 500px){
-  
+.checksize {width:5px;}  
 .center{
     width:80%;
     padding:.5% 10% 2% 10%;
@@ -257,8 +270,9 @@ h5{
     
     }
 #res .col2{
-    width:80%;
-    margin:0 10%;
+    width:100%;
+/*    margin:0 10%;*/
+    
     }
 #res .col2 p{
      -webkit-column-count: 2; /* Chrome, Safari, Opera */
@@ -308,7 +322,7 @@ h5{
 
 }/* end media 500 and up */
 @media only screen and (min-width: 768px){
-
+.checksize {width:7px;}
 .lbTrigger img.pic {
   border-radius: 50%;
   /* Firefox 10+, Firefox on Android */
@@ -352,6 +366,13 @@ img.pretty{
 }
     }/* end media 768 and up */
 @media only screen and (min-width: 1028px){
+    .checksize {width:10px;}
+/*    #res .col2 #headerimage{
+        
+        background-image:url('portimages/portfolioHeader2.png');
+        background-repeat: no-repeat;
+        background-position: center top;
+    }*/
     .lbContent img{
     width:auto;
     } 
@@ -387,7 +408,7 @@ img.pretty{
     background-size: 130px 130px;
     background-position: 20px 5px;*/
     }
-    #res .col2{width:100%;margin:0 0;}
+    #res .col2{width:100%;}
     #res .col2 p{
      -webkit-column-count: 3; /* Chrome, Safari, Opera */
     -moz-column-count: 3; /* Firefox */
