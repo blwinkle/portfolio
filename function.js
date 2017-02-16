@@ -36,14 +36,46 @@ var viewport = function(){
       });
 
   };
+//Function to the css rule
+/*function checkSize(){
+    if ($(".checksize").css("width") == "2px" ){
+        $("#headerimage").attr("src","portimages/portfolioHeader2Less500.png");
+    } else if ($(".checksize").css("width") == "5px" ){
+        $("#headerimage").attr("src","portimages/portfolioHeader2Less500.png");
+    } else if ($(".checksize").css("width") == "7px" ){
+        $("#headerimage").attr("src","portimages/portfolioHeader2over500.png");
+    } else {
+      $("#headerimage").attr("src","portimages/portfolioHeader2.png");
+    } 
+};*/
+
+function checkSize(){
+    if ($(window).width() < 700 ){
+        $("#headerimage").attr("src","portimages/portfolioHeader2Less500.png");
+    } else if ($(window).width() < 1000 ){
+        $("#headerimage").attr("src","portimages/portfolioHeader2over500.png");
+    } else {
+        $("#headerimage").attr("src","portimages/portfolioHeader2.png");
+    } 
+};
 
   $(document).ready(function(){
     lightbox();
 //    viewResume();
     viewport();
+// run test on initial page load
+    checkSize();
       
     $('#res').click(function(){
-        $('p', this).slideToggle('slow');
+        
+        $('.showhide').text(function(i, v){
+        return v === '+ show' ? '- hide' : '+ show'
+        });
+        
+        $('.col2', this).slideToggle('slow');        
+        $('.showhide').toggleText();
+        
+        
     });
       
     jQuery(function($){
@@ -54,10 +86,20 @@ var viewport = function(){
 		$('body').removeClass('no-touch');
         $('body').addClass('touch');
 	}
-
     });
-
       
   });
+// run test on resize of the window
+    $(window).resize(checkSize); 
 
-
+/*$(window).resize(function(){
+    if ($(".checksize").css("width") == "2px" ){
+        $(".checksize").text("portimages/portfolioHeader2Less500.png");
+    } else if ($(".checksize").css("width") == "5px" ){
+        $(".checksize").text("portimages/portfolioHeader2Less500.png");
+    } else if ($(".checksize").css("width") == "7px" ){
+        $(".checksize").text("portimages/portfolioHeader2over500.png");
+    } else {
+      $(".checksize").text("portimages/portfolioHeader2.png");
+    } 
+});*/
