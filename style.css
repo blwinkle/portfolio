@@ -6,13 +6,16 @@ html,body{
     background-color:#1D1F21;
     font-size:.95em;
 /*  font-family:"Helvetica Neue", Helvetica, Gotham,"sans-serif";*/
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Lora', serif, 'Crimson Text','Raleway', sans-serif;
 /*    letter-spacing: .05em;*/
+    font-weight: 500;
 }
+body.touch{font-size:1.1em;}
 h1,h2,h3,h4,h5,h6,strong{
 /*    font-family:Georgia, Arial, serif;*/
-    font-family: 'Sorts Mill Goudy', serif;
+    font-family: 'Playfair Display', 'Sorts Mill Goudy', serif;
 }
+h1.name{font-family: 'Dancing Script', cursive;}
 strong{font-size:1.2em;}
 p > em{font-size:.9em;}
 p{line-height:140%;font-weight:500;}
@@ -42,6 +45,11 @@ p{line-height:140%;font-weight:500;}
 .center{
     width:90%;
     padding:5% 5% 5% 5%;
+    }
+.showhide{
+    width:90%;
+    padding:.5% 5% .5% 5%;
+    text-align:right;
     }
 #nav .center{
    /* background:url('portimages/logoEB.png') no-repeat;
@@ -155,7 +163,7 @@ h5{
 .touch #port .lbTrigger:focus,.touch #port .lbTrigger:active,,.touch #port .lbTrigger:hover{border: 10px solid white;
     -webkit-tap-highlight-color: #fff;
 }
-
+.touch lbTrigger:hover{border: 10px solid white}
 .no-touch #port .lbTrigger:focus{border: 10px solid transparent;}
 .no-touch #port .lbTrigger:hover{border: 10px solid #fff;}
 .lbOverlay
@@ -207,10 +215,11 @@ h5{
   color: #903;
   float: left;
 /*  font-family: Georgia;*/
-  font-family: 'Sorts Mill Goudy', serif;
-  font-size: 5.3em;
+  font-family: 'Playfair Display','Sorts Mill Goudy', serif;
+  font-size: 4em;
   line-height: .1em;
-  padding-top: .49em;
+  padding-top: .4em;
+    padding-bottom: .5em;
   padding-right: .1em;
   padding-left: 0em;
 }
@@ -225,7 +234,11 @@ h5{
   
 .center{
     width:80%;
-    padding:2% 10% 2% 10%;
+    padding:.5% 10% 2% 10%;
+    }
+.showhide{
+    width:80%;
+    padding:.5% 10% .5% 10%;
     }
     #nav .center{
    /* background:url('portimages/logoEB.png') no-repeat;
@@ -354,7 +367,13 @@ img.pretty{
     .center{
     width:1020px;
     margin: 0 auto;
-    padding:0 0px;
+    padding:1px 0px 0px 0px;
+/*    background-color:#fff!important;*/
+    }
+    .showhide{
+    width:1020px;
+    margin: 0 auto;
+    padding:1px 0px 0px 0px;
 /*    background-color:#fff!important;*/
     }
     #res{
