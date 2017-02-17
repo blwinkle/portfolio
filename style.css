@@ -324,7 +324,7 @@ h5{
 @media only screen and (min-width: 768px){
 .checksize {width:7px;}
 .lbTrigger img.pic {
-  border-radius: 50%;
+  border-radius: 5%;
   /* Firefox 10+, Firefox on Android */
   -webkit-filter: grayscale(90%);
   filter: grayscale(90%);
@@ -355,6 +355,40 @@ h5{
         -webkit-transition: all 0.4s ease-in-out;
         transition: all 0.4s ease-in-out;
     }
+    .lbTrigger  {
+    width: 360px;
+    height:240px;
+    color:#454545;
+    background-color:#1D1F21;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;  
+}
+.lbTrigger p strong,.lbTrigger p em{
+    color:#b1b1b1;
+    font-style: normal;
+}
+.lbTrigger.imgHover p strong,.lbTrigger.imgHover p em{
+    color:#1D1F21;
+}
+    .lbTrigger img{
+    float:right;
+        width:150px;
+        height:150px;
+    -moz-transition: all 0.4s ease-in-out;
+        -o-transition: all 0.4s ease-in-out;
+        -webkit-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out;
+}
+.lbTrigger p{
+/*    color:#fff;*/
+    float:left;
+    width:210px;
+    margin:0px;
+    padding:10px;
+/*    color:#1D1F21;*/
+}
 img.pretty{
  filter: grayscale(0%);
     filter: none;
