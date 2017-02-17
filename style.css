@@ -177,7 +177,7 @@ h5{
 .touch #port .lbTrigger:focus,.touch #port .lbTrigger:active,,.touch #port .lbTrigger:hover{border: 10px solid white;
     -webkit-tap-highlight-color: #fff;
 }
-.touch lbTrigger:hover{border: 10px solid white}
+.touch .lbTrigger:hover{border: 10px solid white}
 .no-touch #port .lbTrigger:focus{border: 10px solid white;}
 .no-touch #port .lbTrigger:hover{border: 10px solid #fff;}
 .lbOverlay
