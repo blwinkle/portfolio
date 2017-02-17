@@ -323,10 +323,6 @@ h5{
 }/* end media 500 and up */
 @media only screen and (min-width: 768px){
 .checksize {width:7px;}
-.lbTrigger {        
-    height:200px;
-    width:200px;
-    }
 .lbTrigger img.pic {
   border-radius: 50%;
   height:200px;
@@ -477,10 +473,13 @@ img.pretty{
 .lbTrigger.imgHover p strong,.lbTrigger.imgHover p em{
     color:#1D1F21;
 }
-.lbTrigger img{
-    float:left;
+.lbTrigger img.pic{
     height:250px;
     width:250px;
+    }
+.lbTrigger img{
+    float:left;
+
     -moz-transition: all 0.4s ease-in-out;
         -o-transition: all 0.4s ease-in-out;
         -webkit-transition: all 0.4s ease-in-out;
