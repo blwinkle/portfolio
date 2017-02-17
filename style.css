@@ -17,8 +17,9 @@ h1,h2,h3,h4,h5,h6,strong{
     font-family: 'Playfair Display', 'Sorts Mill Goudy', serif;
 }
 h1.name{font-family: 'Dancing Script', cursive;}
+p{font-size:.95em;}
 strong{font-size:1.2em;}
-p > em{font-size:.9em;}
+/*p > em{font-size:.9em;}*/
 p{line-height:140%;font-weight:500;}
 /* clearfix */
 .group:after {
@@ -145,6 +146,7 @@ h5{
 #port{
     text-align:center;
     margin:0 auto;
+    padding-top:20px;
 }
 
 
@@ -323,10 +325,14 @@ h5{
 }/* end media 500 and up */
 @media only screen and (min-width: 768px){
 .checksize {width:7px;}
+.lbTrigger{    
+    height:210px;
+    width:210px;
+    }
 .lbTrigger img.pic {
   border-radius: 50%;
-  height:200px;
-  width:200px;
+  height:210px;
+  width:210px;
   /* Firefox 10+, Firefox on Android */
   -webkit-filter: grayscale(90%);
   filter: grayscale(90%);
@@ -466,7 +472,12 @@ img.pretty{
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;  
 }
-.lbTrigger p strong,.lbTrigger p em{
+.lbTrigger p{color:#838383;}
+.lbTrigger p strong{
+    color:#d1d1d1;
+    font-style: normal;
+    }
+.lbTrigger p em{
     color:#b1b1b1;
     font-style: normal;
 }
