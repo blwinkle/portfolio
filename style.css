@@ -178,7 +178,7 @@ h5{
     -webkit-tap-highlight-color: #fff;
 }
 .touch lbTrigger:hover{border: 10px solid white}
-.no-touch #port .lbTrigger:focus{border: 10px solid transparent;}
+.no-touch #port .lbTrigger:focus{border: 10px solid white;}
 .no-touch #port .lbTrigger:hover{border: 10px solid #fff;}
 .lbOverlay
   {
@@ -326,13 +326,13 @@ h5{
 @media only screen and (min-width: 768px){
 .checksize {width:7px;}
 .lbTrigger{    
-    height:210px;
-    width:210px;
+    height:235px;
+    width:235px;
     }
 .lbTrigger img.pic {
   border-radius: 50%;
-  height:210px;
-  width:210px;
+  height:235px;
+  width:235px;
   /* Firefox 10+, Firefox on Android */
   -webkit-filter: grayscale(90%);
   filter: grayscale(90%);
