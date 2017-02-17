@@ -321,7 +321,7 @@ h5{
     }
 
 }/* end media 500 and up */
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 768px), only screen and (min-device-width : 768px) and (max-device-width : 1024px){
 .checksize {width:7px;}
 .lbTrigger img.pic {
   border-radius: 50%;
@@ -365,7 +365,7 @@ img.pretty{
   transition: all 1.2s ease-in;
 }
     }/* end media 768 and up */
-@media only screen and (min-width: 1028px){
+@media only screen and (min-width: 1024px){
     .checksize {width:10px;}
 /*    #res .col2 #headerimage{
         
