@@ -71,7 +71,7 @@ setTimeout(function() { $("#myElem").hide(); }, 5000);
 // run test on initial page load
     checkSize();
       
-    $('#res').click(function(){
+/*    $('#res').click(function(){
         
         $('.showhide').text(function(i, v){
         return v === '+ show' ? '- hide' : '+ show'
@@ -81,7 +81,13 @@ setTimeout(function() { $("#myElem").hide(); }, 5000);
         $('.showhide').toggleText();
         
         
+    });*/
+    $('#res').click(function(){
+        $('.showhide').text($('.showhide').text() == '+ show' ? '- hide' : '+ show');
+        $('.col2', this).slideToggle('slow');
     });
+
+     
       
     jQuery(function($){
 
