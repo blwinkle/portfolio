@@ -60,6 +60,11 @@ function checkSize(){
 };
 
   $(document).ready(function(){
+      
+/*$("#myElem").show();
+setTimeout(function() { $("#myElem").hide(); }, 5000);
+      
+      */
     lightbox();
 //    viewResume();
     viewport();
